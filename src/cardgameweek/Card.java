@@ -10,12 +10,22 @@ public class Card {
         public enum Value{ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
         private final Suit suit;
         private final Value value;
+         public enum joker {name, age};
+         private final joker joker;
+       
         
-        public Card(Suit s, Value gVal)
-        {
+        public Card(Suit s, Value gVal){
+        
            suit =s;
            value= gVal;
         }
+        public Card(joker j){
+        
+            joker = j;
+            
+            
+        }
+
 	public Value getValue() {
 		return this.value;
 	}
